@@ -1,0 +1,5 @@
+---
+output:
+    bookdown::pdf_document2:
+        template: proceedings.tex
+---
