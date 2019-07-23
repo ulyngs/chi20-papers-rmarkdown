@@ -41,11 +41,13 @@ abstract: |
   Abstracts should be about 150 words and are required.
 ccs-note: |
   Use the 2012 Classifiers from here: https://dl.acm.org/ccs/ccs_flat.cfm. They should be put in the file **ccsxml.tex**
+bibliography-path: sample-bibliography.bib
 
 output:
     bookdown::pdf_document2:
         template: proceedings.tex
         keep_tex: true
+        citation_package: natbib #NOTE! The CHI'20 template doesn't actually use natbib but some custom thing.
         includes:
           in_header: ccsxml.tex
 ---

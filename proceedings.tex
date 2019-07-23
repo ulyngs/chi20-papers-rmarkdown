@@ -1,5 +1,10 @@
 \documentclass{sigchi}
 
+% UL 23 July 2019, hack because the CHI'20 template doesn't use the natbib package. 
+% Therefore, we modify the 'citep' and 'citet' commands inserted by R Markdown's natbib package to simply 'cite'
+\let\citep\cite
+\let\citet\cite
+
 % UL 23 July 2019, enable code inclusion in shaded environments
 $if(highlighting-macros)$
 $highlighting-macros$
@@ -171,7 +176,7 @@ $body$
 % REFERENCES FORMAT
 % References must be the same font size as other body text.
 \bibliographystyle{SIGCHI-Reference-Format}
-\bibliography{sample}
+\bibliography{$bibliography-path$}
 
 \end{document}
 
