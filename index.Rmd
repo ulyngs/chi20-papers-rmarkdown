@@ -12,7 +12,7 @@ conference-location: Honolulu, HI, USA
 
 #paper info
 title: SIGCHI Conference Proceedings Format
-plain-author: First Author, Second Author, Third Author, Fourth Author, Fifth Author, Sixth Author
+plain-author: Ben Trovato, Lars Thørväld, Valerie Palmer
 numberofauthors: 3
 keywords: Authors' choice; of terms; separated; by semicolons; include commas, within terms only; this section is required.
 generalterms: Documentation, Standardization
