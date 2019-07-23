@@ -5,22 +5,17 @@
 % copyright statement.
 
 % Copyright
-\CopyrightYear{2020}
-%\setcopyright{acmcopyright}
-\setcopyright{acmlicensed}
-%\setcopyright{rightsretained}
-%\setcopyright{usgov}
-%\setcopyright{usgovmixed}
-%\setcopyright{cagov}
-%\setcopyright{cagovmixed}
+\CopyrightYear{$copyright-year$}
+\setcopyright{$setcopyright$}
+
 % DOI
-\doi{https://doi.org/10.1145/3313831.XXXXXXX}
+\doi{https://doi.org/$doi$}
 % ISBN
-\isbn{978-1-4503-6708-0/20/04}
+\isbn{$isbn$}
 %Conference
-\conferenceinfo{CHI'20,}{April  25--30, 2020, Honolulu, HI, USA}
+\conferenceinfo{$conference-and-year$,}{$conference-dates-and-year$, $conference-location$}
 %Price
-\acmPrice{\$$15.00}
+\acmPrice{$acm-price$}
 
 % Use this command to override the default ACM copyright statement
 % (e.g. for preprints).  Consult the conference website for the
@@ -76,13 +71,11 @@
 % Paper metadata (use plain text, for PDF inclusion and later
 % re-using, if desired).  Use \emtpyauthor when submitting for review
 % so you remain anonymous.
-\def\plaintitle{SIGCHI Conference Proceedings Format}
-\def\plainauthor{First Author, Second Author, Third Author,
-  Fourth Author, Fifth Author, Sixth Author}
+\def\plaintitle{$title$}
+\def\plainauthor{$plain-author$}
 \def\emptyauthor{}
-\def\plainkeywords{Authors' choice; of terms; separated; by
-  semicolons; include commas, within terms only; this section is required.}
-\def\plaingeneralterms{Documentation, Standardization}
+\def\plainkeywords{$keywords$}
+\def\plaingeneralterms{$generalterms$}
 
 % llt: Define a global style for URLs, rather that the default one
 \makeatletter
@@ -134,68 +127,35 @@
 
 \title{\plaintitle}
 
-\numberofauthors{3}
+\numberofauthors{$numberofauthors$}
 \author{%
-  \alignauthor{Leave Authors Anonymous\\
-    \affaddr{for Submission}\\
-    \affaddr{City, Country}\\
-    \email{e-mail address}}\\
-  \alignauthor{Leave Authors Anonymous\\
-    \affaddr{for Submission}\\
-    \affaddr{City, Country}\\
-    \email{e-mail address}}\\
-  \alignauthor{Leave Authors Anonymous\\
-    \affaddr{for Submission}\\
-    \affaddr{City, Country}\\
-    \email{e-mail address}}\\
+$for(author)$
+  \alignauthor{$author.name$\\
+    \affaddr{$author.affiliation.institution$}\\
+    \affaddr{$author.affiliation.city$, $author.affiliation.country$}\\
+    \email{$author.email$}}\\
+$endfor$  
 }
 
 \maketitle
 
 \begin{abstract}
-  UPDATED---\today. This sample paper describes the formatting
-  requirements for SIGCHI conference proceedings, and offers
-  recommendations on writing for the worldwide SIGCHI
-  readership. Please review this document even if you have submitted
-  to SIGCHI conferences before, as some format details have changed
-  relative to previous years. Abstracts should be about 150 words and
-  are required.
+$abstract$
 \end{abstract}
 
 
 % ACM Classfication
-
-\begin{CCSXML}
-<ccs2012>
-<concept>
-<concept_id>10003120.10003121</concept_id>
-<concept_desc>Human-centered computing~Human computer interaction (HCI)</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003120.10003121.10003125.10011752</concept_id>
-<concept_desc>Human-centered computing~Haptic devices</concept_desc>
-<concept_significance>300</concept_significance>
-</concept>
-<concept>
-<concept_id>10003120.10003121.10003122.10003334</concept_id>
-<concept_desc>Human-centered computing~User studies</concept_desc>
-<concept_significance>100</concept_significance>
-</concept>
-</ccs2012>
-\end{CCSXML}
-
-\ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
-\ccsdesc[300]{Human-centered computing~Haptic devices}
-\ccsdesc[100]{Human-centered computing~User studies}
+% is inserted automatically
+$for(header-includes)$
+$header-includes$
+$endfor$
 
 % Author Keywords
 \keywords{\plainkeywords}
 
-% Print the classficiation codes
+% Print the classificiation codes
 \printccsdesc
-Please use the 2012 Classifiers and see this link to embed them in the text: \url{https://dl.acm.org/ccs/ccs_flat.cfm}
-
+$ccs-note$
 
 
 \section{Introduction}

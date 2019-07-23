@@ -1,5 +1,51 @@
 ---
+copyright-year: 2020
+setcopyright: acmlicensed #acmcopyright, acmlicensed, rightsretained, usgov, usgovmixed, cagov, cagovmixed
+doi: 10.1145/3313831.XXXXXXX #NOTE: insert only the doi numbers, drop https://doi.org
+isbn: 978-1-4503-6708-0/20/04
+acm-price: $15.00
+
+#conferenceinfo
+conference-and-year: CHI'20
+conference-dates-and-year: April 25--30, 2020
+conference-location: Honolulu, HI, USA
+
+#paper info
+title: SIGCHI Conference Proceedings Format
+plain-author: First Author, Second Author, Third Author, Fourth Author, Fifth Author, Sixth Author
+numberofauthors: 3
+keywords: Authors' choice; of terms; separated; by semicolons; include commas, within terms only; this section is required.
+generalterms: Documentation, Standardization
+author:
+  - name: Ben Trovato
+    email: trovato\@corporation.com  #NOTE: you must escape the @
+    affiliation:
+      institution: Institute for Clarity in Documentation
+      city: Oxford
+      country: UK
+  - name: Lars Thørväld
+    affiliation:
+      institution: The Thørväld Group
+      city: Hekla
+      country: Iceland
+    email: larst\@affiliation.org
+  - name: Valerie Palmer
+    affiliation:
+      institution: Palmer Research Laboratories
+      city: San Antonio
+      country: US
+    email: cpalmer\@prl.com
+abstract: |
+  This sample paper describes the formatting requirements for SIGCHI conference proceedings, and offers recommendations on writing for the worldwide SIGCHI readership. 
+  Please review this document even if you have submitted to SIGCHI conferences before, as some format details have changed relative to previous years. 
+  Abstracts should be about 150 words and are required.
+ccs-note: |
+  Use the 2012 Classifiers from here: https://dl.acm.org/ccs/ccs_flat.cfm. They should be put in the file **ccsxml.tex**
+
 output:
     bookdown::pdf_document2:
         template: proceedings.tex
+        keep_tex: true
+        includes:
+          in_header: ccsxml.tex
 ---
