@@ -9,7 +9,8 @@ This repository provides a straightforward R Markdown template for [CHI'20 Paper
 ## How to use
 - Download or clone this repository
 - Open **2019-07-23 CHI 2020 template.Rproj** in RStudio
-- Update **index.Rmd** with your paper content and metadata
+- Update **index.Rmd** with your paper content and metadata (example: [**index.Rmd**](https://github.com/ulyngs/chi20-papers-rmarkdown/blob/master/index.Rmd)
+- Update **ccsxml.tex** with the CCS concepts relevant to your paper
 - Click 'Knit' to create PDF output (example: [**index.pdf**](https://github.com/ulyngs/chi20-papers-rmarkdown/blob/master/index.pdf))
 
 
