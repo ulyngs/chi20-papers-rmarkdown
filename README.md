@@ -16,3 +16,13 @@ This repository provides a straightforward R Markdown template for [CHI'20 Paper
 
 ## How to cite
 [![DOI](https://zenodo.org/badge/198419990.svg)](https://zenodo.org/badge/latestdoi/198419990)
+
+@misc{LyngsCHI2020PaperRmarkdown2019,
+  author = {Lyngs, Ulrik},
+  title = {chi20-papers-rmarkdown},
+  year = {2019},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/ulyngs/chi20-papers-rmarkdown}},
+  doi = {10.5281/zenodo.3451422},
+}
