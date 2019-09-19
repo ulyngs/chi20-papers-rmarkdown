@@ -14,3 +14,5 @@ This repository provides a straightforward R Markdown template for [CHI'20 Paper
 - Click 'Knit' to create PDF output (example: [**index.pdf**](https://github.com/ulyngs/chi20-papers-rmarkdown/blob/master/index.pdf))
 
 
+## How to cite
+[![DOI](https://zenodo.org/badge/198419990.svg)](https://zenodo.org/badge/latestdoi/198419990)
